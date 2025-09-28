@@ -20,7 +20,6 @@ contract RocketActions {
         isMoonModeOn = false;
     }
 
-    // Fonction pour activer ou désactiver le turbo
     function toggleTurbo() public {
         isTurboOn = !isTurboOn;
         emit TurboActivated(isTurboOn);
