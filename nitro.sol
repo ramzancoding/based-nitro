@@ -6,17 +6,14 @@
 pragma solidity ^0.8.0;
 
 contract RocketActions {
-    // États de la fusée
     bool public isTurboOn;
     uint public nitroAmount;
     bool public isMoonModeOn;
 
-    // Événements pour suivre les actions de la fusée
     event TurboActivated(bool state);
     event NitroActivated(uint amount);
     event MoonModeToggled(bool state);
 
-    // Constructeur pour initialiser les états de la fusée
     constructor() {
         isTurboOn = false;
         nitroAmount = 0;
